@@ -1,0 +1,42 @@
+@charset "utf-8";
+#header {
+  background: #222;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#header a {
+  color: #ffffff;
+  font: 1.25rem "微软雅黑";
+}
+#header a:hover {
+  text-decoration: underline;
+  color: #00A8FF;
+}
+#nav {
+  margin-bottom: 5px;
+  border-radius: 0;
+}
+#nav .navbar-header {
+  padding: 15px 0;
+  margin-right: 20px;
+  font: bold 20px/50px "微软雅黑";
+  color: #337AB7;
+}
+#nav .navbar-header span {
+  margin-left: 10px;
+}
+#login .panel-body .title {
+  font: 18px "微软雅黑";
+  color: #999;
+  padding: 30px 0 20px 0;
+}
+#login .panel-body .form-horizontal .form-control {
+  max-width: 220px;
+}
+#login .panel-body .form-horizontal .help-block {
+  padding: 6px 0;
+}
+#login .panel-body .form-horizontal button {
+  width: 100px;
+  margin-left: 40px;
+}

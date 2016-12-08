@@ -1,0 +1,164 @@
+@charset "utf-8";
+@color: #fff;
+@color1:#0099DD;
+#header {
+    background: #222;
+    border-radius: 0;
+    margin-bottom: 0;
+    a {
+        color: @color;
+        font: 1.25rem "微软雅黑";
+        margin-left: 10px;
+        &:hover {
+            text-decoration: underline;
+            color: #00A8FF;
+        }
+    }
+    .hover {
+        font-weight: bold;
+        color: #00A8FF;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .navbar-toggle {
+        border-color: @color;
+        &:hover {
+            background-color: #333;
+        }
+        .icon-bar {
+            background-color: @color;
+        }
+    }
+}
+#nav {
+    margin-bottom: 5px;
+    .navbar-header {
+        padding: 15px 0;
+        margin-right: 20px;
+    }
+    .navbar-nav {
+        a {
+            padding: 0 15px;
+            min-width: 80px;
+            text-align: center;
+            font: 16px/80px "微软雅黑";
+            &:hover {
+                background: #F0F0F0;
+            }
+        }
+    }
+}
+
+
+#borrow-info{
+    font-family: "微软雅黑";
+    .left{
+        .panel-body{
+            div{
+                text-align: center;
+                margin-bottom:40px;
+                img{
+                    display: block;
+                    width:40%;
+                    margin:0 auto;
+                }
+                a{
+                    text-align: center;
+                }
+                
+            }
+            span{
+                width:24px;
+                height:22px;
+                border-radius:3px;
+                color:@color;
+                text-align: center;
+                line-height:20px;
+                background-color:#5CB85C;
+            }
+        }
+    }
+    .center{
+        h3{
+            margin-top:0;
+            color:@color1;
+            span{
+                font-size:12px;
+            }
+        }
+        p{
+            color:#999;
+            font-size:16px;
+            line-height: 30px;
+            span{
+                color:@color1;
+                padding-left:30px;
+            }
+        }
+    }
+    .right{
+        p{
+            color:#999;
+            font-size:16px;
+            line-height:16px;
+            span{
+                color:@color1;
+                padding-left:50px;
+            }
+        }
+        h4{
+            color:#337AB7;
+        }
+    }
+    .loaning-info,.verify-info{
+        .panel-heading{
+            font-size:16px;
+        }
+        p{
+            color:#999;
+            font-size:16px;
+            line-height:14px;
+            span{
+                padding-left:12px;
+                color:@color1;
+            }
+        }
+    }
+    .data-info{
+        .panel-heading{
+            font-size:16px;
+        }
+        .panel-body{
+            .table{
+                font-size:16px;
+                td{
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .borrow-info{
+        .panel-heading{
+            font-size:16px;
+        }
+        .panel-body{
+            .table{
+                font-size:16px;
+            }
+        }
+    }
+    .tender-info{
+        .panel-heading{
+            font-size:16px;
+        }
+        .panel-body{
+            .table{
+                font-size:16px;
+                span{
+                    color:@color1;
+                }
+            }
+        }
+    }
+}

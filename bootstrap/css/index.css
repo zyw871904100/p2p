@@ -1,0 +1,133 @@
+@charset "utf-8";
+#header {
+  background: #222;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#header .navbar-header .navbar-brand span {
+  color: #ffffff;
+}
+#header .navbar-header .navbar-brand span:nth-of-type(2) {
+  font: 2.5rem/2rem "微软雅黑";
+}
+#header a {
+  color: #ffffff;
+  font: 1.25rem "微软雅黑";
+}
+#header a:hover {
+  text-decoration: underline;
+  color: #00A8FF;
+}
+#header .navbar-toggle {
+  border-color: #ffffff;
+}
+#header .navbar-toggle:hover {
+  background-color: #333;
+}
+#header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+#nav {
+  margin-bottom: 5px;
+}
+#nav .navbar-header {
+  padding: 15px 0;
+  margin-right: 20px;
+}
+#nav .navbar-nav a {
+  padding: 0 15px;
+  min-width: 80px;
+  text-align: center;
+  font: 16px/80px "微软雅黑";
+}
+#nav .navbar-nav a:hover {
+  background: #F0F0F0;
+}
+.carousel {
+  margin: 0 10px;
+}
+#feature .col-md-4 .col-md-3 {
+  margin-top: 20px;
+}
+#feature .col-md-4 .col-md-9 h3 {
+  font: bold 18px "微软雅黑";
+}
+#feature .col-md-4 .col-md-9 p {
+  color: #999;
+  font: 14px/20px "微软雅黑";
+}
+#loaning .panel-default {
+  margin-top: 10px;
+  border-color: #ffffff;
+}
+#loaning .panel-default .panel-heading {
+  background-color: #ffffff;
+  padding: 0;
+  position: relative;
+}
+#loaning .panel-default .panel-heading span {
+  font: bold 24px/30px "微软雅黑";
+  color: #2E8ECE;
+  border-bottom: 3px solid #2E8ECE;
+  position: relative;
+  top: 7px;
+}
+#loaning .panel-default .panel-heading a {
+  position: absolute;
+  right: 20px;
+  font: 16px/40px "微软雅黑";
+}
+#loaning .panel-default .table th {
+  height: 50px;
+  color: #999;
+}
+#loaning .panel-default .table td {
+  font: 16px "微软雅黑";
+  vertical-align: middle;
+}
+#loaning .panel-default .table td:nth-child(3),
+#loaning .panel-default .table td:nth-child(4) {
+  color: #31708F;
+}
+#content .panel-default {
+  margin-top: 10px;
+  border-color: #ffffff;
+  border: none;
+  border-radius: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+#content .panel-default .panel-heading {
+  background-color: #ffffff;
+  padding: 0;
+  position: relative;
+}
+#content .panel-default .panel-heading span {
+  font: bold 24px/30px "微软雅黑";
+  color: #2E8ECE;
+  border-bottom: 3px solid #2E8ECE;
+  position: relative;
+  top: 7px;
+}
+#content .panel-default .panel-heading a {
+  position: absolute;
+  right: 20px;
+  font: 14px/40px "微软雅黑";
+}
+#content .panel-default .list-group {
+  margin-top: 12px;
+}
+#content .panel-default .list-group .list-group-item {
+  padding: 20px 15px;
+  border-radius: 0;
+  line-height: 0;
+  border-top-color: #eee;
+  border-top-style: dotted;
+  border-bottom: 1px dotted #eee;
+}
+#content .panel-default .list-group .list-group-item a {
+  color: #222222;
+  font-family: "微软雅黑";
+}
+#content .panel-default .list-group .list-group-item a:hover {
+  color: #0099DD;
+}

@@ -1,0 +1,138 @@
+@charset "utf-8";
+#header {
+  background: #222;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#header a {
+  color: #ffffff;
+  font: 1.25rem "微软雅黑";
+  margin-left: 10px;
+}
+#header a:hover {
+  text-decoration: underline;
+  color: #00A8FF;
+}
+#header .hover {
+  font-weight: bold;
+  color: #00A8FF;
+}
+#header .hover:hover {
+  text-decoration: none;
+}
+#header .navbar-toggle {
+  border-color: #ffffff;
+}
+#header .navbar-toggle:hover {
+  background-color: #333;
+}
+#header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+#nav {
+  margin-bottom: 5px;
+}
+#nav .navbar-header {
+  padding: 15px 0;
+  margin-right: 20px;
+}
+#nav .navbar-nav a {
+  padding: 0 15px;
+  min-width: 80px;
+  text-align: center;
+  font: 16px/80px "微软雅黑";
+}
+#nav .navbar-nav a:hover {
+  background: #F0F0F0;
+}
+#borrow-info {
+  font-family: "微软雅黑";
+}
+#borrow-info .left .panel-body div {
+  text-align: center;
+  margin-bottom: 40px;
+}
+#borrow-info .left .panel-body div img {
+  display: block;
+  width: 40%;
+  margin: 0 auto;
+}
+#borrow-info .left .panel-body div a {
+  text-align: center;
+}
+#borrow-info .left .panel-body span {
+  width: 24px;
+  height: 22px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 20px;
+  background-color: #5CB85C;
+}
+#borrow-info .center h3 {
+  margin-top: 0;
+  color: #0099dd;
+}
+#borrow-info .center h3 span {
+  font-size: 12px;
+}
+#borrow-info .center p {
+  color: #999;
+  font-size: 16px;
+  line-height: 30px;
+}
+#borrow-info .center p span {
+  color: #0099dd;
+  padding-left: 30px;
+}
+#borrow-info .right p {
+  color: #999;
+  font-size: 16px;
+  line-height: 16px;
+}
+#borrow-info .right p span {
+  color: #0099dd;
+  padding-left: 50px;
+}
+#borrow-info .right h4 {
+  color: #337AB7;
+}
+#borrow-info .loaning-info .panel-heading,
+#borrow-info .verify-info .panel-heading {
+  font-size: 16px;
+}
+#borrow-info .loaning-info p,
+#borrow-info .verify-info p {
+  color: #999;
+  font-size: 16px;
+  line-height: 14px;
+}
+#borrow-info .loaning-info p span,
+#borrow-info .verify-info p span {
+  padding-left: 12px;
+  color: #0099dd;
+}
+#borrow-info .data-info .panel-heading {
+  font-size: 16px;
+}
+#borrow-info .data-info .panel-body .table {
+  font-size: 16px;
+}
+#borrow-info .data-info .panel-body .table td {
+  font-weight: bold;
+}
+#borrow-info .borrow-info .panel-heading {
+  font-size: 16px;
+}
+#borrow-info .borrow-info .panel-body .table {
+  font-size: 16px;
+}
+#borrow-info .tender-info .panel-heading {
+  font-size: 16px;
+}
+#borrow-info .tender-info .panel-body .table {
+  font-size: 16px;
+}
+#borrow-info .tender-info .panel-body .table span {
+  color: #0099dd;
+}

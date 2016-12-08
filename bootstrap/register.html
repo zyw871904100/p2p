@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>蓝源Eloan-注册</title>
+		<link href="node_modules/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="node_modules/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+		<script src="js/jquery.validate.js"></script>
+		<script src="js/messages_cn.js"></script>
+	</head>
+
+	<body>
+		<!--头部开始-->
+		<div id="header" class="navbar navbar-default">
+			<div class="container">
+				<div id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="login.html">登陆</a></li>
+						<li><a href="register.html">快速注册</a></li>
+						<li><a href="#">帮助</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--头部结束-->
+
+		<!--导航开始-->
+		<div id="nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img src="images/logo.png" />
+					</a>
+					<span>用户注册</span>
+				</div>
+			</div>
+		</div>
+		<!--导航结束-->
+
+		<!--注册开始-->
+		<div id="register">
+			<div class="container">
+				<div class="panel panel-default">
+					<div class="panel-heading">用户注册</div>
+					<div class="panel-body col-sm-offset-2">
+						<p class="title col-md-offset-1">请填写注册信息，点击"提交注册"即可完成注册！</p>
+						<form class="form-horizontal" id="registerForm">
+							<div class="form-group">
+								<label for="inputUsername" class="col-sm-2 control-label">用户名</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputUsername" name="username">
+									<p class="help-block">用户名为2~16位字母，数字，符号或中文</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+								<div class="col-sm-10">
+									<input type="password" class="form-control" id="inputPassword3" name="pwd1">
+									<p class="help-block">密码为6~16位字符组成,采用数字、字母、符号安全性更高</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputPassword4" class="col-sm-2 control-label">确认密码</label>
+								<div class="col-sm-10">
+									<input type="password" class="form-control" id="inputPassword4" name="pwd2">
+									<p class="help-block">请再次填写密码</p>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-2 col-sm-10">
+									<button type="button" class="btn btn-success">同意协议并注册</button>
+									<a href="login.html" style="margin-left:40px">已有账号,马上登录</a>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-3 col-sm-10">
+									<a href="#">《使用协议说明书》</a>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--注册结束-->
+
+		<!--底部开始-->
+		<script src="js/footer.js"></script>
+		<!--底部结束-->
+		<script type="text/javascript">
+			$(function() {
+				$("#registerForm").validate({
+					rules: {
+						username: {
+							required: true,
+							rangelength: [2, 16]
+						},
+						pwd1: {
+							required: true,
+							rangelength: [6, 16]
+						},
+						pwd2: {
+							required: true,
+							equalTo: "#inputPassword3"
+						}
+					},
+					messages: {
+						username: {
+							required: "您填写的用户名不符合要求，请重新填写！",
+							rangelength: "请输入2~16位的用户名"
+						},
+						pwd1: {
+							required: "您输入的密码不符合要求，请重新输入！",
+							rangelength: "密码至少为6位"
+						},
+						pwd2: {
+							required: "两次输入的密码不一致，请重新输入！",
+							rangelength: "两次输入的密码不一致，请重新输入！"
+						}
+					},
+					errorPlacement: function(error, element) {
+						error.appendTo(element.parent());
+					}
+				});
+			});
+		</script>
+	</body>
+
+</html>

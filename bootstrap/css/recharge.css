@@ -1,0 +1,122 @@
+@charset "utf-8";
+#header {
+  background: #222;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#header a {
+  color: #ffffff;
+  font: 1.25rem "微软雅黑";
+  margin-left: 10px;
+}
+#header a:hover {
+  text-decoration: underline;
+  color: #00A8FF;
+}
+#header .hover {
+  font-weight: bold;
+  color: #00A8FF;
+}
+#header .hover:hover {
+  text-decoration: none;
+}
+#header .navbar-toggle {
+  border-color: #ffffff;
+}
+#header .navbar-toggle:hover {
+  background-color: #333;
+}
+#header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+#nav {
+  margin-bottom: 5px;
+  border-radius: 0;
+}
+#nav .navbar-header {
+  padding: 15px 0;
+  margin-right: 20px;
+  font: bold 20px/50px "微软雅黑";
+  color: #337AB7;
+}
+#nav .navbar-header span {
+  margin-left: 10px;
+}
+#recharge {
+  font-family: "微软雅黑";
+}
+#recharge .info {
+  background-color: #F4F8FA;
+  line-height: 30px;
+  border-left: 2px solid #0099DD;
+}
+#recharge .info p {
+  padding: 40px 0 0 26px;
+  font-size: 24px;
+  color: #0099DD;
+}
+#recharge .info ol {
+  padding-bottom: 30px;
+}
+#recharge .tab {
+  margin-left: 0;
+}
+#recharge .tab li {
+  cursor: pointer;
+  padding: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  top: 10px;
+  color: #337AB7;
+}
+#recharge .tab li:hover {
+  background-color: #eee;
+}
+#recharge .tab .current {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: relative;
+  top: 11px;
+  color: #000;
+  cursor: default;
+}
+#recharge .tab .current:hover {
+  background-color: #ffffff;
+}
+#recharge .tabContent .panel {
+  border-radius: 0;
+  font-size: 16px;
+}
+#recharge .tabContent .panel #offline-recharge td {
+  line-height: 32px;
+}
+#recharge .tabContent .panel #offline-recharge h4 {
+  color: #337AB7;
+  margin-bottom: 4px;
+}
+#recharge .tabContent .panel #offline-recharge p {
+  color: #337AB7;
+  font-size: 14px;
+}
+#recharge .tabContent .panel #offline-recharge .b1 {
+  background: url(../images/bank_list.png) no-repeat;
+  background-position: 0px 10px;
+}
+#recharge .tabContent .panel #offline-recharge .b2 {
+  background: url(../images/bank_list.png) no-repeat;
+  background-position: 0px -28px;
+}
+#recharge .tabContent .panel #offline-recharge .b3 {
+  background: url(../images/bank_list.png) no-repeat 0px 0px;
+  background-position: 0px -100px;
+}
+#recharge .tabContent .panel #inline-recharge {
+  color: #A94442;
+  font-size: 24px;
+  text-align: center;
+  display: none;
+}

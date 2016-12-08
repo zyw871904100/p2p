@@ -1,0 +1,98 @@
+@charset "utf-8";
+@color:#fff;
+#header {
+    background: #222;
+    border-radius: 0;
+    margin-bottom: 0;
+    a {
+        color: @color;
+        font: 1.25rem "微软雅黑";
+        margin-left:10px;
+        &:hover{
+            text-decoration: underline;
+            color:#00A8FF;
+        }
+    }
+    .hover{
+        font-weight: bold;
+        color:#00A8FF;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .navbar-toggle{
+        border-color:@color;
+        &:hover{
+            background-color:#333;
+        }
+        .icon-bar{
+            background-color: @color;
+        }
+    }
+}
+
+#nav{
+    margin-bottom:5px;
+    .navbar-header{
+        padding:15px 0;
+        margin-right:20px;
+    }
+    .navbar-nav{
+        a{
+            padding:0 15px;
+            min-width:80px;
+            text-align: center;
+            font:16px/80px "微软雅黑";
+            &:hover{
+                background: #F0F0F0;
+            }
+        }
+    }
+}
+
+#borrow{
+    margin-top:30px;
+    .panel{
+        border:0;
+        .panel-heading{
+            border-radius: 0;
+            font:24px/30px "微软雅黑";
+            color:@color;
+        }
+        .panel-body{
+            background-color:#F9F9F9;
+            font-family: "微软雅黑";
+            p:first-child{
+                font:16px "微软雅黑";
+            }
+            p:nth-child(3){
+                color:#737373;
+            }
+            ul{
+                list-style: none;
+                padding:0;
+                li{
+                    padding-left:30px;
+                    margin-top:6px;
+                    background: url(../images/sequare.png) no-repeat;
+                    background-position: 10px center;
+                }
+            }
+            .apply{
+                display:block;
+                width:80px;
+                height: 30px;
+                background-color:#2CA2EE;
+                border-radius:15px;
+                margin:0 auto;
+                color:@color;
+                text-align: center;
+                font:14px/30px "微软雅黑";
+                &:hover{
+                    background-color:#008FD9;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

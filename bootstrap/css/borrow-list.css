@@ -1,0 +1,111 @@
+@charset "utf-8";
+#header {
+  background: #222;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#header a {
+  color: #ffffff;
+  font: 1.25rem "微软雅黑";
+  margin-left: 10px;
+}
+#header a:hover {
+  text-decoration: underline;
+  color: #00A8FF;
+}
+#header .hover {
+  font-weight: bold;
+  color: #00A8FF;
+}
+#header .hover:hover {
+  text-decoration: none;
+}
+#header .navbar-toggle {
+  border-color: #ffffff;
+}
+#header .navbar-toggle:hover {
+  background-color: #333;
+}
+#header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+#nav {
+  margin-bottom: 5px;
+}
+#nav .navbar-header {
+  padding: 15px 0;
+  margin-right: 20px;
+}
+#nav .navbar-nav a {
+  padding: 0 15px;
+  min-width: 80px;
+  text-align: center;
+  font: 16px/80px "微软雅黑";
+}
+#nav .navbar-nav a:hover {
+  background: #F0F0F0;
+}
+#personal .list-group {
+  border-radius: 0;
+}
+#personal .list-group-item {
+  background-color: #F5F5F5;
+  font-family: "微软雅黑";
+  color: #337AB7;
+}
+#personal .list-group-item:hover {
+  color: #23527C;
+}
+#personal a:nth-child(3),
+#personal a:nth-child(6),
+#personal a:nth-child(7),
+#personal a:nth-child(8),
+#personal a:nth-child(11),
+#personal a:nth-child(12),
+#personal a:nth-child(13) {
+  border-bottom: 0;
+}
+#personal a:nth-child(4),
+#personal a:nth-child(7),
+#personal a:nth-child(8),
+#personal a:nth-child(9),
+#personal a:nth-child(12),
+#personal a:nth-child(13),
+#personal a:nth-child(14) {
+  border-top: 0;
+}
+#personal .sub-item {
+  background-color: #ffffff;
+  padding-left: 40px;
+}
+#personal .sub-item:hover {
+  text-decoration: underline;
+  color: #23527C;
+}
+#personal .active {
+  background-color: #337AB7;
+  color: #ffffff;
+}
+#personal .active:hover {
+  background-color: #337AB7;
+  color: #ffffff;
+}
+#personal .panel {
+  padding: 0;
+  font-family: "微软雅黑";
+}
+#personal .panel .panel-body {
+  padding: 0;
+}
+#personal .panel .panel-body .n1 {
+  font-weight: bold;
+  color: #777;
+}
+#personal .panel .panel-body .n2 {
+  font-weight: bold;
+  color: #3C763D;
+}
+#personal .panel .panel-body .n3 {
+  font-weight: bold;
+  color: #A94442;
+}

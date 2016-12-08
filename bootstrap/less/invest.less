@@ -1,0 +1,120 @@
+@charset "utf-8";
+@color:#fff;
+#header {
+    background: #222;
+    border-radius: 0;
+    margin-bottom: 0;
+    a {
+        color: @color;
+        font: 1.25rem "微软雅黑";
+        margin-left:10px;
+        &:hover{
+            text-decoration: underline;
+            color:#00A8FF;
+        }
+    }
+    .hover{
+        font-weight: bold;
+        color:#00A8FF;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .navbar-toggle{
+        border-color:@color;
+        &:hover{
+            background-color:#333;
+        }
+        .icon-bar{
+            background-color: @color;
+        }
+    }
+}
+
+#nav{
+    margin-bottom:5px;
+    .navbar-header{
+        padding:15px 0;
+        margin-right:20px;
+    }
+    .navbar-nav{
+        a{
+            padding:0 15px;
+            min-width:80px;
+            text-align: center;
+            font:16px/80px "微软雅黑";
+            &:hover{
+                background: #F0F0F0;
+            }
+        }
+    }
+}
+
+#invest{
+    font-family: "微软雅黑";
+    margin-bottom:40px;
+    .title{
+        font:18px/24px "微软雅黑";
+        margin:10px 0;
+    }
+    .dl-horizontal{
+        margin-top:20px;
+        dt{
+            text-align: left;
+            width:80px;
+            color:#777;
+            font-weight: normal;
+            line-height: 30px;
+        }
+        dd{
+            margin-left:80px;
+            ul{
+               max-width:273px;
+               height:36px;
+               margin-left:14px;
+                li{
+                    height:36px;
+                    text-align: center;
+                    line-height: 36px;
+                    margin:-2px;
+                    width:90px;
+                    border:1px solid #ccc;
+                    a{
+                       color:#000;
+                       text-decoration: none;
+                    }
+                    &:first-child{
+                        border-right:0;
+                        border-top-left-radius:5px;
+                        border-bottom-left-radius:5px;
+                    }
+                    &:last-child{
+                        border-left:0;
+                        border-top-right-radius:5px;
+                        border-bottom-right-radius:5px;
+                    }
+                }
+                .current{
+                    background-color:#E6E6E6;
+                }
+            } 
+        }
+    }
+    .panel-default{
+        border:0;
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+        .table{
+            th{
+                height:50px;
+                color:#999;
+            }
+            td{
+                font:16px "微软雅黑";
+                vertical-align: middle;
+                &:nth-child(3),&:nth-child(4){
+                    color:#31708F;
+                }
+            }
+        }
+    }
+}

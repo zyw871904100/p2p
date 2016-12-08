@@ -1,0 +1,114 @@
+@charset "utf-8";
+#header {
+  background: #222;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+#header a {
+  color: #ffffff;
+  font: 1.25rem "微软雅黑";
+  margin-left: 10px;
+}
+#header a:hover {
+  text-decoration: underline;
+  color: #00A8FF;
+}
+#header .hover {
+  font-weight: bold;
+  color: #00A8FF;
+}
+#header .hover:hover {
+  text-decoration: none;
+}
+#header .navbar-toggle {
+  border-color: #ffffff;
+}
+#header .navbar-toggle:hover {
+  background-color: #333;
+}
+#header .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+#nav {
+  margin-bottom: 5px;
+}
+#nav .navbar-header {
+  padding: 15px 0;
+  margin-right: 20px;
+}
+#nav .navbar-nav a {
+  padding: 0 15px;
+  min-width: 80px;
+  text-align: center;
+  font: 16px/80px "微软雅黑";
+}
+#nav .navbar-nav a:hover {
+  background: #F0F0F0;
+}
+#invest {
+  font-family: "微软雅黑";
+  margin-bottom: 40px;
+}
+#invest .title {
+  font: 18px/24px "微软雅黑";
+  margin: 10px 0;
+}
+#invest .dl-horizontal {
+  margin-top: 20px;
+}
+#invest .dl-horizontal dt {
+  text-align: left;
+  width: 80px;
+  color: #777;
+  font-weight: normal;
+  line-height: 30px;
+}
+#invest .dl-horizontal dd {
+  margin-left: 80px;
+}
+#invest .dl-horizontal dd ul {
+  max-width: 273px;
+  height: 36px;
+  margin-left: 14px;
+}
+#invest .dl-horizontal dd ul li {
+  height: 36px;
+  text-align: center;
+  line-height: 36px;
+  margin: -2px;
+  width: 90px;
+  border: 1px solid #ccc;
+}
+#invest .dl-horizontal dd ul li a {
+  color: #000;
+  text-decoration: none;
+}
+#invest .dl-horizontal dd ul li:first-child {
+  border-right: 0;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+#invest .dl-horizontal dd ul li:last-child {
+  border-left: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+#invest .dl-horizontal dd ul .current {
+  background-color: #E6E6E6;
+}
+#invest .panel-default {
+  border: 0;
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+#invest .panel-default .table th {
+  height: 50px;
+  color: #999;
+}
+#invest .panel-default .table td {
+  font: 16px "微软雅黑";
+  vertical-align: middle;
+}
+#invest .panel-default .table td:nth-child(3),
+#invest .panel-default .table td:nth-child(4) {
+  color: #31708F;
+}

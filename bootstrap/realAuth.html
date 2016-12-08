@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>蓝源Eloan-实名认证</title>
+		<link href="node_modules/bootstrap-3.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/footer.css" />
+		<link rel="stylesheet" type="text/css" href="css/realAuth.css" />
+		<script src="js/jquery-2.1.0.js"></script>
+		<script src="node_modules/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--头部开始-->
+		<div id="header" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="personal.html" class="hover">小强</a></li>
+						<li><a href="recharge.html">账户充值</a></li>
+						<li><a href="#">注销</a></li>
+						<li><a href="#">帮助</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--头部结束-->
+
+		<!--导航开始-->
+		<div id="nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img src="images/logo.png" />
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="index.html">首页 <span class="sr-only">(current)</span></a></li>
+					<li><a href="invest.html">我要投资</a></li>
+					<li><a href="borrow.html">我要借款</a></li>
+					<li class="active"><a href="personal.html">个人中心</a></li>
+					<li><a href="#">新手指引</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		<!--导航结束-->
+
+		<!--个人中心账户信息开始-->
+		<div id="personal">
+			<div class="container">
+				<div class="row">
+					<!--左边导航开始-->
+					<div class="list-group col-md-3 col-sm-3">
+						<a href="#" class="list-group-item">投资项目</a>
+						<a href="#" class="list-group-item">借款项目</a>
+						<a href="borrow-list.html" class="list-group-item sub-item">借款项目</a>
+						<a href="return-status.html" class="list-group-item sub-item">还款明细</a>
+						<a href="#" class="list-group-item">我的账户</a>
+						<a href="personal.html" class="list-group-item sub-item">账户信息</a>
+						<a href="realAuth.html" class="list-group-item sub-item active">实名认证</a>
+						<a href="#" class="list-group-item sub-item">银行卡管理</a>
+						<a href="#" class="list-group-item sub-item">登录记录</a>
+						<a href="#" class="list-group-item">资产详情</a>
+						<a href="#" class="list-group-item sub-item">账户流水</a>
+						<a href="recharge-list.html" class="list-group-item sub-item">充值明细</a>
+						<a href="#" class="list-group-item sub-item">提现记录</a>
+						<a href="#" class="list-group-item sub-item">收款明细</a>
+						<a href="userInfo.html" class="list-group-item">个人资料</a>
+					</div>
+					<!--左边导航结束-->
+					<div class="panel panel-default col-md-9 col-sm-9">
+						<div class="panel-heading clearfix">
+							<span class="pull-left">实名认证管理</span>
+							<span class="pull-right"><a href="" id="tianjia" class="btn btn-success" data-toggle="modal" data-target="#myModal">添加</a></span>
+						</div>
+						<table class="table table-bordered" id="table">
+							<tbody>
+								<tr>
+									<th>id</th>
+									<th>姓名</th>
+									<th>身份证</th>
+									<th>电话</th>
+									<th>城市</th>
+									<th>状态</th>
+									<th>操作</th>
+								</tr>
+							</tbody>
+							<tfoot>
+							   <tr>
+								   <td colspan="7">
+									   <ul class="pagination" id="pagination" >
+
+									   </ul>
+								   </td>
+							   </tr>
+
+							</tfoot>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--个人中心账户信息结束-->
+
+		<!--底部开始-->
+		<script src="js/footer.js"></script>
+		<!--底部结束-->
+
+		<!--模态框开始-->
+		<div class="modal fade" id="myModal" tabindex="-1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" id="close1" data-dismiss="modal">
+								<span>&times;</span>
+							</button>
+						<h4 class="modal-title">添加数据</h4>
+					</div>
+					<div class="modal-body">
+						<form class="form-horizontal" id="addForm">
+							<div class="form-group">
+								<label for="inputUsername" class="col-sm-2 control-label">姓名</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputUsername" name="username">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputIDcard" class="col-sm-2 control-label">身份证</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputIDcard" name="IDcard">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputTel" class="col-sm-2 control-label">电话</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputTel" name="tel">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputCity" class="col-sm-2 control-label">城市</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputCity" name="city">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="selectStatus" class="col-sm-2 control-label">状态</label>
+								<div class="col-sm-9">
+									<select class="form-control" id="selectStatus" name="status">
+										    <option>审核通过</option>
+										    <option>审核失败</option>
+										    <option>待审核</option>
+										</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-success" id="saveUser">保存</button>
+						<button type="button" class="btn btn-danger" id="close2" data-dismiss="modal">取消</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--模态框结束-->
+
+		<script>
+			/*页面加载完毕后从后台拿到数据，显示到表格中*/
+			$(function() {
+				$.ajax({
+					type: "get",
+					url: "http://localhost:3000/mockapi",
+					async: false,
+					dataType: "jsonp",
+					success: function(data) {
+						showTable("#table",data);
+					},
+					error: function(err) {
+						console.log(err);
+					}
+				});
+				
+				
+				/*定义函数，用于显示表格数据*/
+				function showTable(id,data) {
+					var tbody=$(id).find("tbody");
+					var dataArr = data.itemGroup;
+					$.each(dataArr, function(index1, item1) {
+						var tr = $("<tr></tr>");
+						var txt = '<button class="btn btn-primary" id="editUser" data-toggle="modal" data-target="#myModal">编辑</button>   <button class="btn btn-danger" id="deleteUser" data-toggle="modal" data-target="#myModal">删除</button>';
+						$.each(item1, function(index2, item2) {
+							var td = "<td>" + item2 + "</td>";
+							$(td).appendTo(tr);
+						});
+						$("<td>" + txt + "</td>").appendTo(tr);
+						tr.appendTo(tbody);
+					});
+				}
+				
+				/*添加用户*/
+				$("#saveUser").click(function(){
+					var parmas=$("#addForm").serialize();
+					$.get("http://localhost:3000/addUser?parmas="+parmas,function(err){
+						console.log(err)
+					});
+					$("#addForm").find("input").val("");
+					$("#addForm").find("select").val("审核通过");
+					$("#myModal").modal("hide");
+				})
+				
+			});
+
+
+			
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,106 @@
+@charset "utf-8";
+@color: #fff;
+#header {
+    background: #222;
+    border-radius: 0;
+    margin-bottom: 0;
+    a {
+        color: @color;
+        font: 1.25rem "微软雅黑";
+        margin-left: 10px;
+        &:hover {
+            text-decoration: underline;
+            color: #00A8FF;
+        }
+    }
+    .hover {
+        font-weight: bold;
+        color: #00A8FF;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .navbar-toggle {
+        border-color: @color;
+        &:hover {
+            background-color: #333;
+        }
+        .icon-bar {
+            background-color: @color;
+        }
+    }
+}
+#nav {
+    margin-bottom: 5px;
+    .navbar-header {
+        padding: 15px 0;
+        margin-right: 20px;
+    }
+    .navbar-nav {
+        a {
+            padding: 0 15px;
+            min-width: 80px;
+            text-align: center;
+            font: 16px/80px "微软雅黑";
+            &:hover {
+                background: #F0F0F0;
+            }
+        }
+    }
+}
+#personal {
+    .list-group {
+        border-radius: 0;
+    }
+    .list-group-item {
+        background-color: #F5F5F5;
+        font-family: "微软雅黑";
+        color: #337AB7;
+        &:hover {
+            color: #23527C;
+        }
+    }
+    a:nth-child(3),a:nth-child(6),a:nth-child(7),a:nth-child(8),
+    a:nth-child(11),a:nth-child(12),a:nth-child(13){
+        border-bottom:0;
+    }
+    a:nth-child(4),a:nth-child(7),a:nth-child(8),a:nth-child(9),
+    a:nth-child(12),a:nth-child(13),a:nth-child(14){
+        border-top:0;
+    }
+    .sub-item {
+        background-color: @color;
+        padding-left: 40px;
+        &:hover {
+            text-decoration: underline;
+            color: #23527C;
+        }
+    }
+    .active {
+        background-color: #337AB7;
+        color: @color;
+        &:hover {
+            background-color: #337AB7;
+            color: @color;
+        }
+    }
+    .panel{
+        padding:0;
+        font-family: "微软雅黑";
+        .panel-body{
+            padding:0;
+            .n1{
+                font-weight: bold;
+                color:#777;
+            }
+            .n2{
+                font-weight: bold;
+                color:#3C763D;
+            }
+            .n3{
+                font-weight: bold;
+                color:#A94442;
+            }
+        }
+    }
+}
